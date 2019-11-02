@@ -34,6 +34,7 @@ about:
   home: https://github.com/mayeut/pybase64/
   license: BSD-2.0
   license_family: BSD
+  license_file: LICENSE	
   summary: 'Fast Base64 encoding/decoding in Python'
   doc_url: https://github.com/mayeut/pybase64/
   dev_url: https://github.com/mayeut/pybase64/
