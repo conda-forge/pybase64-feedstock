@@ -32,7 +32,7 @@ test:
 
 about:
   home: https://github.com/mayeut/pybase64/
-  license: BSD-2.0
+  license: BSD-2-Clause
   license_family: BSD
   license_file: LICENSE
   summary: Fast Base64 encoding/decoding in Python
