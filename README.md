@@ -3,7 +3,7 @@ About pybase64
 
 Home: https://github.com/mayeut/pybase64/
 
-Package license: BSD-2.0
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pybase64-feedstock/blob/master/LICENSE.txt)
 
