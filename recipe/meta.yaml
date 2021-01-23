@@ -1,6 +1,6 @@
 {% set name = "pybase64" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "60b40d3f0aeba4a72f3418aaf93376742e8cc476d56787b57958665b926fe07f" %}
+{% set version = "1.1.3" %}
+{% set sha256 = "8780ef85be10c9fff3d52cd9849e67243d9e2c6644f936e5be00c9279d8ff10b" %}
 
 package:
   name: {{ name|lower }}
