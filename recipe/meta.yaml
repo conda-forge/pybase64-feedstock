@@ -1,6 +1,6 @@
 {% set name = "pybase64" %}
-{% set version = "1.2.1" %}
-{% set sha256 = "d2016a3a487d3d4501d8281f61ee54c25efd65e37a4c7dce8011e0de7183c956" %}
+{% set version = "1.2.2" %}
+{% set sha256 = "befd983a5a7b6551355b6abe56723f7f9f12c580e02f126b7883b075bebff25c" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pybase64=pybase64.__main__:main
