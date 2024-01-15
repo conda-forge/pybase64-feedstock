@@ -13,7 +13,9 @@ source:
 build:
   number: 1
   # set CIBUILDWHEEL to throw errors if the C extension fails to build
-  script: CIBUILDWHEEL=1 {{ PYTHON }} -m pip install . --no-deps -vv
+  script_env:
+    - CIBUILDWHEEL=1
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pybase64=pybase64.__main__:main
 
