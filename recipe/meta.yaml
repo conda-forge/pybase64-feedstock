@@ -11,14 +11,16 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  number: 1
+  # set CIBUILDWHEEL to throw errors if the C extension fails to build
+  script: CIBUILDWHEEL=1 {{ PYTHON }} -m pip install . --no-deps -vv
   entry_points:
     - pybase64=pybase64.__main__:main
 
 requirements:
   build:
     - {{ compiler('c') }}
+    - cmake
   host:
     - python
     - pip
