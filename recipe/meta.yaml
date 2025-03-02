@@ -1,17 +1,17 @@
 {% set name = "pybase64" %}
-{% set version = "1.4.0" %}
-{% set sha256 = "714f021c3eaa287c1097ced68f2df4c5b2ecd2504551c2e71c843f54365aca03" %}
+{% set version = "1.4.1" %}
+{% set sha256 = "03fc365c601671add4f9e0713c2bc2485fa4ab2b32f0d3bb060bd7e069cdaa43" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
 
 build:
-  number: 1
+  number: 0
   # set CIBUILDWHEEL to throw errors if the C extension fails to build
   script_env:
     - CIBUILDWHEEL=1
