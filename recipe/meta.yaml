@@ -1,6 +1,6 @@
 {% set name = "pybase64" %}
-{% set version = "1.4.2" %}
-{% set sha256 = "46cdefd283ed9643315d952fe44de80dc9b9a811ce6e3ec97fd1827af97692d0" %}
+{% set version = "1.4.3" %}
+{% set sha256 = "c2ed274c9e0ba9c8f9c4083cfe265e66dd679126cd9c2027965d807352f3f053" %}
 
 package:
   name: {{ name|lower }}
@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 2
+  number: 0
   # set CIBUILDWHEEL to throw errors if the C extension fails to build
   script_env:
     - CIBUILDWHEEL=1
