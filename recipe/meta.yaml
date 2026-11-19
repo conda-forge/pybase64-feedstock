@@ -11,7 +11,7 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
+  number: 1
   # set CIBUILDWHEEL to throw errors if the C extension fails to build
   script_env:
     - CIBUILDWHEEL=1
